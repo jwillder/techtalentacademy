@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Outfit&display=swap');
+
+html * {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Outfit";
+  background-color: #FDF5E6;
+}
+
+/* ---- LAYOUT ---- */
+
+.container {
+  max-width: 1000px;
+  margin: 10px auto;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  border-bottom: 2px dashed gray;
+}
+
+header img {
+  height: 170px;
+  border: 2px solid grey;
+  background-color: #f8f6f1;
+  border-radius: 50%;
+  transition: transform 1.5s ease-in-out;
+}
+
+header img:hover{
+  transform: rotate(360deg);
+}
+
+nav ul {
+  margin: 0;
+}
+
+nav li {
+  list-style-type: none;
+  font-size: 18px;
+}
+
+section {
+  padding: 30px 0;
+}
+
+/* ---- TYPOGRAPHY ---- */
+
+h1 {
+  color: #0033AA;
+  font-size: 44px;
+  font-family: 'Bungee Shade';
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+  color: #0033AA;
+  margin-bottom: 1em;
+}
+
+h3 {
+  display: inline-block;
+  margin: 20px 0;
+  font-size: 22px;
+  color: #0033AA;
+}
+
+summary > h3 {
+  color: #1E90FF;
+}
+
+summary > h3:hover {
+  cursor: pointer;
+  color: #0033AA;
+}
+
+details[open] > summary > h3 {
+  color: #0033AA;
+}
+
+p, li {
+  color: #2f3542;
+  font-size: 18px;
+  line-height: 1.3em;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+ol,ul {
+  margin-left: 40px;
+  margin-bottom: 1em;
+}
+
+a {
+  color: #1E90FF;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0033AA;
+}
+
+/* ---- FORMS ---- */
+
+input, select {
+  margin-top: 10px;
+  padding: 3px;
+  font-size: 18px;
+}
+
+select {
+  margin-left: 4px;
+}
+
+input[type=submit] {
+  background-color: #960018;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+input[type=submit]:hover {
+  background-color: #c80815;
+  cursor: pointer;
+}
+
+/* ---- CYBER THREATS PAGE---- */
+
+.cyber_img {
+  float: left;
+  margin-right: 20px;
+}
+
+ol.topten {
+  margin-top: 2em;
+}
+
+ol.topten li {
+  color: #0033AA;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* ---- TECH MEDIA PAGE ---- */
+
+section .medialist {
+  background-color: rgb(94, 94, 94);
+  border-radius: 10px;
+}
+
+.medialist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item {
+  width: 230px;
+  margin: 0 10px 20px 10px;
+  text-align: center;
+ }
+
+.item img {
+  height: 200px;
+  border-radius: 10px;
+  transition: all .2s ease-in-out;
+  border: 1px solid #aaa;
+}
+
+.item img:hover {
+  transform: scale(1.1);
+}
+
+.item p {
+  font-size: 14px;
+  margin-top: 8px;
+  color: #fff;
+}

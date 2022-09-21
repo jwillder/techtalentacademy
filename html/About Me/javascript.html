@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>The Power Of JavaScript</title>
+  <style>
+    body {
+      max-width: 1000px;
+      margin: 0 auto;
+      color: #00cc00;
+      background: url("images/matrix_dark.jpg");
+      font-family: monospace;
+    }
+    .container {
+      padding: 20px 30px;
+      background: rgba(0,0,0,0.6);
+    }
+    h2 {
+      border-top: 1px dashed #00AA00;
+      padding-top: 20px;
+    }
+    input {
+      margin: 10px 0;
+    }
+    button {
+      margin: 10px 0;
+    }
+  </style>
+</head>
+
+<body onload="sixTimesTable();">
+  <div class="container">
+    <h1>>> JavaScript HLT</h1>
+
+    <h2>Behold The Date & Time</h2>
+    <button type="button" onclick="dateTime();">Click me for the reveal!</button>
+    <p id="datetime"></p>
+
+    <h2>6 Times Table (powered by JavaScript&#8482;)</h2>
+    <p id="sixtimestable"></p>
+
+    <h2>UK Voting Age Calculator</h2>
+    <form>
+      <label for="age">Enter your age:</label>
+      <input name="age" id="age">
+      <button type="button" onclick="votingAgeCalculator();">Check age</button>
+    </form>
+    <p id="votingresult"></p>
+
+    <h2>Introduce Yourself</h2>
+    <form>
+      <label for="firstname">Enter your firstname:</label>
+      <br>
+      <input name="firstname" id="firstname">
+      <br>
+      <label for="lastname">Enter your lastname:</label>
+      <br>
+      <input name="lastname" id="lastname">
+      <br>
+      <button type="button" onclick="hello();">Hello to you</button>
+    </form>
+    <p id="hello"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

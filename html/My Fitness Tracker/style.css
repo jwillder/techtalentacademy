@@ -1,0 +1,12 @@
+body {
+  font-family: serif;
+}
+
+h1 {
+  color: blue;
+  text-align: center;
+}
+
+h1 + p {
+  text-align: center;
+}
